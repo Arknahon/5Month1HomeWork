@@ -14,8 +14,8 @@ class CategoryCell: UICollectionViewCell {
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var title: UILabel!
     
-    func display(item: Category) {
-        picture.image = UIImage(named: item.CategoryImage)
-        title.text = item.CategoryText
+    func display(image: UIImage?, text: String) {
+        picture.image = image
+        title.text = text
     }
 }

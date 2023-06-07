@@ -17,20 +17,11 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productDescription: UILabel!
     
     func display(item: Product) {
+        let data = try? Data(contentsOf: URL(string: item.thumbnail)!)
+        picture.image = UIImage(data: data!)
         productName.text = item.title
         rating.text = String(item.rating)
         productDescription.text = item.description
-        
-        DispatchQueue.global(qos: .userInitiated).async {
-            guard let data = ImageDownloader(
-                urlString: item.thumbnail
-            ).donwload()
-            else {
-                return
-            }
-            DispatchQueue.main.async {
-                self.picture.image = UIImage(data: data)
-            }
-        }
     }
 }
+

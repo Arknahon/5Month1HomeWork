@@ -20,7 +20,7 @@ class DeliveryCell: UICollectionViewCell {
         
         contentView.layer.cornerRadius = 20
         contentView.backgroundColor = .orange
-        title.textColor = .white
-        picture.tintColor = .white
+        title.textColor = .gray
+        picture.tintColor = .gray
     }
 }
