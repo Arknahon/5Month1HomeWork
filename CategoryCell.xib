@@ -4,46 +4,49 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCell" customModule="_M1stHomeWork" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="80" height="110"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="80" height="110"/>
-                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJl-O6-Nhy">
-                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="80" id="3XN-3Y-vBQ"/>
-                            <constraint firstAttribute="height" constant="80" id="9hm-AU-2CZ"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-xZ-FcC">
-                        <rect key="frame" x="2" y="86" width="76" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                </subviews>
-            </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IuL-cl-oKi">
+                    <rect key="frame" x="0.0" y="-3" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ASX-6V-rwg"/>
+                        <constraint firstAttribute="height" constant="80" id="IUc-4w-Fqv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgf-mK-Vwx">
+                    <rect key="frame" x="5" y="88" width="70" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="URc-IE-pNG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="RJl-O6-Nhy" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Hog-5r-yNf"/>
-                <constraint firstItem="RJl-O6-Nhy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UB9-BO-ObM"/>
-                <constraint firstItem="jtw-xZ-FcC" firstAttribute="top" secondItem="RJl-O6-Nhy" secondAttribute="bottom" constant="6" id="VWq-dd-qIL"/>
-                <constraint firstItem="RJl-O6-Nhy" firstAttribute="centerX" secondItem="jtw-xZ-FcC" secondAttribute="centerX" id="mzd-HN-Oxq"/>
+                <constraint firstItem="jgf-mK-Vwx" firstAttribute="top" secondItem="IuL-cl-oKi" secondAttribute="bottom" constant="11" id="DjC-Oz-BXl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IuL-cl-oKi" secondAttribute="bottom" constant="38" id="HsT-nS-AzA"/>
+                <constraint firstItem="jgf-mK-Vwx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="Mkn-1j-WH8"/>
+                <constraint firstItem="jgf-mK-Vwx" firstAttribute="centerX" secondItem="IuL-cl-oKi" secondAttribute="centerX" id="im3-3D-uu1"/>
+                <constraint firstItem="IuL-cl-oKi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nsC-Xo-4nC"/>
             </constraints>
-            <size key="customSize" width="80" height="110"/>
-            <connections>
-                <outlet property="picture" destination="RJl-O6-Nhy" id="f1z-wk-BZi"/>
-                <outlet property="title" destination="jtw-xZ-FcC" id="oxF-Wl-04c"/>
-            </connections>
-            <point key="canvasLocation" x="79.389312977099237" y="-0.70422535211267612"/>
-        </collectionViewCell>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-209.16030534351145" y="-54.577464788732399"/>
+        </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

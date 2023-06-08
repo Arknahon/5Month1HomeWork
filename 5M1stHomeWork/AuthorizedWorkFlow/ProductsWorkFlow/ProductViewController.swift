@@ -38,6 +38,18 @@ class ProductViewController: UIViewController {
     private var filteredProducts: [Product] = []
     private var isFiltered: Bool = false
     
+    private let viewModel: ProductsViewModel
+    
+    init() {
+        viewModel = ProductsViewModel()
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        viewModel = ProductsViewModel()
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchProducts()

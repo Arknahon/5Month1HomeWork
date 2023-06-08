@@ -11,7 +11,7 @@
         <!--Product View Controller-->
         <scene sceneID="nNt-ee-czR">
             <objects>
-                <viewController id="d8M-KH-OoZ" customClass="ProductViewController" customModule="IOS15Dop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d8M-KH-OoZ" customClass="ProductViewController" customModule="_M1stHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L5R-ZJ-3ZU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,14 +60,14 @@
                                     <tabBarItem systemItem="more" id="Lc0-Zc-Ien"/>
                                 </items>
                             </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jo-1Y-1ji">
-                                <rect key="frame" x="20" y="369" width="73" height="20.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="58 stores open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jo-1Y-1ji">
+                                <rect key="frame" x="20" y="369" width="123" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-vX-9Fz">
-                                <rect key="frame" x="0.0" y="399.66666666666674" width="393" height="369.33333333333326"/>
+                                <rect key="frame" x="0.0" y="399.33333333333326" width="393" height="369.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -87,7 +87,7 @@
                             <constraint firstItem="L2V-ai-GPK" firstAttribute="trailing" secondItem="nnM-Ai-dLM" secondAttribute="trailing" id="Zaa-pt-gnZ"/>
                             <constraint firstItem="7jo-1Y-1ji" firstAttribute="top" secondItem="eFN-mj-P9w" secondAttribute="bottom" constant="20" id="bB9-dP-9oU"/>
                             <constraint firstItem="L2V-ai-GPK" firstAttribute="top" secondItem="nnM-Ai-dLM" secondAttribute="bottom" constant="10" id="eMR-f5-ocP"/>
-                            <constraint firstItem="zMF-5b-2vF" firstAttribute="trailing" secondItem="7jo-1Y-1ji" secondAttribute="trailing" constant="300" id="f6T-Lh-0it"/>
+                            <constraint firstItem="zMF-5b-2vF" firstAttribute="trailing" secondItem="7jo-1Y-1ji" secondAttribute="trailing" constant="250" id="f6T-Lh-0it"/>
                             <constraint firstItem="zMF-5b-2vF" firstAttribute="trailing" secondItem="nnM-Ai-dLM" secondAttribute="trailing" id="gc8-Ft-i8y"/>
                             <constraint firstItem="L2V-ai-GPK" firstAttribute="leading" secondItem="nnM-Ai-dLM" secondAttribute="leading" id="hY5-IK-F8t"/>
                             <constraint firstItem="HC7-BL-v8v" firstAttribute="leading" secondItem="eFN-mj-P9w" secondAttribute="leading" id="nMg-rj-ESZ"/>
@@ -103,6 +103,7 @@
                         <outlet property="productTableView" destination="ge9-vX-9Fz" id="cFW-kd-bOw"/>
                         <outlet property="searchBar" destination="L2V-ai-GPK" id="UL4-91-jYl"/>
                         <outlet property="tabbar" destination="HC7-BL-v8v" id="WEg-Kl-Q5v"/>
+                        <outlet property="tableView" destination="ge9-vX-9Fz" id="QyD-D4-Hvu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRN-gN-VXh" sceneMemberID="firstResponder"/>
@@ -134,6 +135,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

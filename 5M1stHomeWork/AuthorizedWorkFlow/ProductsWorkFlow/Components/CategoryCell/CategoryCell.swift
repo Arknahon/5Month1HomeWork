@@ -11,8 +11,8 @@ class CategoryCell: UICollectionViewCell {
     static let reuseId = String(describing: CategoryCell.self)
     static let nibName = String(describing: CategoryCell.self)
     
-    @IBOutlet weak var picture: UIImageView!
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet private weak var picture: UIImageView!
+    @IBOutlet private weak var title: UILabel!
     
     func display(image: UIImage?, text: String) {
         picture.image = image
